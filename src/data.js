@@ -9,10 +9,9 @@ import ALEY from "./assets/ALEY.jpeg";
 import ParisCanal from "./assets/ParisCanal.jpeg";
 import Sayda from "./assets/Sayda.jpeg";
 import Beach from "./assets/Beach.jpeg";
-import FlowerInHand from "./assets/FlowerInHand.jpeg";
 import Rahbe from "./assets/Rahbe.jpeg";
 import JabalSafi from "./assets/JabalSafi.jpeg";
-
+import CV from "./assets/Danah_Al_Abdallah_CV.pdf";
 
 export const profile = {
   name: "Danah Al-Abdallah",
@@ -21,7 +20,7 @@ export const profile = {
   tagline:
     "I'm a software developer who enjoys using technology to build meaningful, accessible solutions that make everyday life easier for people of all ages and backgrounds. I build modern, intuitive and accessible web apps, from the interface down to the database, for people of all ages and backgrounds.",
   email: "danaalabdallah02@gmail.com",
-  cv: "/cv.pdf", // your CV is at /public/cv.pdf, or set to "" to hide the button
+  cv: CV, // your CV is at /public/cv.pdf, or set to "" to hide the button
   github: "https://github.com/DanahAlAbdallah",
   linkedin: "https://www.linkedin.com/in/danahalabdallah/",
   photo: prof,
