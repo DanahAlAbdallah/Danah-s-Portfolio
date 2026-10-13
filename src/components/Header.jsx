@@ -1,5 +1,5 @@
 import { nav, profile } from "../data";
-import ThemeSwitcher from "./ThemeSwitcher";
+// import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function Header() {
   return (
