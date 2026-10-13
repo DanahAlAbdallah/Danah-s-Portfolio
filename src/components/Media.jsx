@@ -1,8 +1,22 @@
+
 // Shows a real image, or a themed placeholder until you add one.
-export default function Media({ src, alt, label = "Your image here", className = "" }) {
+export default function Media({
+  src,
+  alt,
+  label = "Your image here",
+  className = "",
+}) {
   if (src) {
-    return <img src={src} alt={alt} loading="lazy" className={`h-full w-full object-cover ${className}`} />;
+    return (
+      <img
+        src={src}
+        alt={alt}
+        loading="lazy"
+        className={`h-full w-full object-contain object-center ${className}`}
+      />
+    );
   }
+
   return (
     <div
       role="img"

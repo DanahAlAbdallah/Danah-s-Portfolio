@@ -40,14 +40,14 @@ export default function Beyond() {
               <PenLine className="mb-4 h-7 w-7" aria-hidden="true" />
               <h3 className="font-heading text-2xl font-semibold">Writing</h3>
               <p className="mt-2">{beyond.writing.text}</p>
-              <a
+              {/* <a
                 href={beyond.writing.link.href}
                 target="_blank"
                 rel="noreferrer"
                 className="mt-5 inline-flex items-center gap-1.5 font-semibold underline underline-offset-4"
               >
                 {beyond.writing.link.label} <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-              </a>
+              </a> */}
             </div>
           </Reveal>
           <Reveal index={1}>
@@ -57,14 +57,14 @@ export default function Beyond() {
               <p className="mt-2 text-soft">
                 Mostly street and landscape, shot when the light is worth waiting for.
               </p>
-              <a
+              {/* <a
                 href={beyond.photoLink.href}
                 target="_blank"
                 rel="noreferrer"
                 className="mt-5 inline-flex items-center gap-1.5 font-semibold text-link underline underline-offset-4"
               >
                 {beyond.photoLink.label} <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-              </a>
+              </a> */}
             </div>
           </Reveal>
         </div>

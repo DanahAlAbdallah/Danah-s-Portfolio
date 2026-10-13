@@ -3,13 +3,23 @@
    Images: put files in /public/photos and reference them as "/photos/name.jpg".
    Leave `src: null` to show a placeholder.
    ========================================================================== */
-import prof from "./assets/Prof.jpg";
+import prof from "./assets/GifHero.gif";
+import project1 from "./assets/project1.png";
+import ALEY from "./assets/ALEY.jpeg";
+import ParisCanal from "./assets/ParisCanal.jpeg";
+import Sayda from "./assets/Sayda.jpeg";
+import Beach from "./assets/Beach.jpeg";
+import FlowerInHand from "./assets/FlowerInHand.jpeg";
+import Rahbe from "./assets/Rahbe.jpeg";
+import JabalSafi from "./assets/JabalSafi.jpeg";
+
+
 export const profile = {
   name: "Danah Al-Abdallah",
   role: "Full stack developer",
   availability: "Open to new roles", // set to "" to hide the badge
   tagline:
-    "I build modern, intuitive and accessible web apps, from the interface down to the database, for people of all ages and backgrounds.",
+    "I'm a software developer who enjoys using technology to build meaningful, accessible solutions that make everyday life easier for people of all ages and backgrounds. I build modern, intuitive and accessible web apps, from the interface down to the database, for people of all ages and backgrounds.",
   email: "danaalabdallah02@gmail.com",
   cv: "/cv.pdf", // your CV is at /public/cv.pdf, or set to "" to hide the button
   github: "https://github.com/DanahAlAbdallah",
@@ -19,7 +29,7 @@ export const profile = {
 };
 
 export const nav = [
-  { id: "about", label: "About" },
+  // { id: "about", label: "About" },
   { id: "projects", label: "Projects" },
   { id: "experience", label: "Experience" },
   { id: "skills", label: "Skills" },
@@ -56,32 +66,34 @@ export const experience = [
 // Add each project's own GitHub repo link in `github` (empty hides the button).
 export const projects = [
   {
-    title: "Daher Travel Agency Dashboard",
+    title: "Mental Health Community Website",
+    status: "In Progress",
     summary:
-      "A travel agency system built at Libanux Software Solutions, with smooth communication between employees and admins, notifications, and role-based collaboration for admins and super admins.",
-    stack: ["Angular", "TypeScript", "Bootstrap", "CSS", "MongoDB"],
-    github: "",
+      "A mental health platform designed to make mental health support more accessible. It connects users with therapists, offers informative articles shared by professionals, and allows users to book therapy sessions through a simple and user-friendly interface. The platform aims to raise awareness, encourage personal growth, and create a supportive community where everyone’s mental well-being matters.",
+    stack: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Express.js", "PostgreSQL", "Prisma ORM"],
+    backendURL: "https://github.com/DanahAlAbdallah/Mental-Health-backend",
+    frontendURL:"https://github.com/DanahAlAbdallah/Mental-Health-Frontend",
     live: "",
-    image: null, // e.g. "/photos/daher-dashboard.png"
+    image: project1, 
   },
-  {
-    title: "Online Goods Shop",
-    summary:
-      "A collaborative shop built at ESA Coding Lab where users can add, sell and view items, with Stripe payment integration.",
-    stack: ["React.js", "Express.js", "MongoDB", "Bootstrap"],
-    github: "",
-    live: "",
-    image: null,
-  },
-  {
-    title: "School Management System",
-    summary:
-      "A collaborative website built at ESA Coding Lab with the main features a school needs, friendly for teachers, students and parents.",
-    stack: ["PHP", "JavaScript", "Ajax", "Bootstrap", "HTML & CSS"],
-    github: "",
-    live: "",
-    image: null,
-  },
+  // {
+  //   title: "Online Goods Shop",
+  //   summary:
+  //     "A collaborative shop built at ESA Coding Lab where users can add, sell and view items, with Stripe payment integration.",
+  //   stack: ["React.js", "Express.js", "MongoDB", "Bootstrap"],
+  //   github: "",
+  //   live: "",
+  //   image: null,
+  // },
+  // {
+  //   title: "School Management System",
+  //   summary:
+  //     "A collaborative website built at ESA Coding Lab with the main features a school needs, friendly for teachers, students and parents.",
+  //   stack: ["PHP", "JavaScript", "Ajax", "Bootstrap", "HTML & CSS"],
+  //   github: "",
+  //   live: "",
+  //   image: null,
+  // },
 ];
 
 export const skills = [
@@ -112,16 +124,16 @@ export const beyond = {
   intro:
     "When I am not coding I am usually looking for good light or turning an idea into a few honest paragraphs.",
   photos: [
-    { src: null, alt: "Describe photo 1", caption: "Place, year", shape: "portrait" },
-    { src: null, alt: "Describe photo 2", caption: "Place, year", shape: "landscape" },
-    { src: null, alt: "Describe photo 3", caption: "Place, year", shape: "square" },
-    { src: null, alt: "Describe photo 4", caption: "Place, year", shape: "landscape" },
-    { src: null, alt: "Describe photo 5", caption: "Place, year", shape: "portrait" },
-    { src: null, alt: "Describe photo 6", caption: "Place, year", shape: "square" },
+    { src: ALEY, alt: "Describe photo 1", caption: "Aley, 2026", shape: "portrait" },
+    { src: JabalSafi, alt: "Describe photo 2", caption: "Jabal Safi, 2022", shape: "landscape" },
+    { src: Sayda, alt: "Describe photo 3", caption: "Sayda, 2026", shape: "square" },
+    { src: Beach, alt: "Describe photo 4", caption: "Sayda, 2026", shape: "landscape" },
+    { src: ParisCanal, alt: "Describe photo 5", caption: "Sarafand, 2026", shape: "portrait" },
+    { src: Rahbe, alt: "Describe photo 6", caption: "Akkar, 2026", shape: "square" },
   ],
   photoLink: { label: "More photographs", href: "https://instagram.com/your-username" },
   writing: {
-    text: "I write short essays and notes about technology, places and the things I notice. A line about where to read them goes here.",
+    text: "I write in Arabic, weaving thoughts, feelings, and observations into prose. Through words, I capture the little things that often go unnoticed and give them a place to live.",
     link: { label: "Read my writing", href: "https://medium.com/@your-username" },
   },
 };

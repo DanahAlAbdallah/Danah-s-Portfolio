@@ -12,19 +12,32 @@ function ProjectCard({ project, featured }) {
         featured ? "md:grid-cols-2" : ""
       }`}
     >
-      <div className="aspect-[16/10] overflow-hidden border-b border-line md:min-h-56 md:aspect-auto md:border-b-0">
-        <div className="h-full w-full transition-transform duration-500 ease-out group-hover:scale-105">
-          <Media src={project.image} alt={`${project.title} screenshot`} label="Project screenshot" />
+      <div className="h-full min-h-56 overflow-hidden border-b border-line md:border-b-0">
+        <div className="flex h-full w-full items-center justify-center p-4">
+          <Media
+            src={project.image}
+            alt={`${project.title} screenshot`}
+            label="Project screenshot"
+          />
         </div>
       </div>
-
       <div className="flex flex-col p-6 sm:p-7">
-        <h3 className="font-heading text-2xl font-semibold tracking-tight sm:text-3xl">{project.title}</h3>
+        <h3 className="font-heading text-2xl font-semibold tracking-tight sm:text-3xl">
+          {project.title}
+        </h3>
+       {project.status && (
+  <span className="w-fit self-start rounded-full border border-line bg-page px-3 py-1 text-xs font-medium text-soft">
+    {project.status}
+  </span>
+)}
         <p className="mt-3 text-soft">{project.summary}</p>
 
         <ul className="mt-5 flex flex-wrap gap-2">
           {project.stack.map((tech) => (
-            <li key={tech} className="rounded-full border border-line bg-page px-2.5 py-1 text-xs text-soft">
+            <li
+              key={tech}
+              className="rounded-full border border-line bg-page px-2.5 py-1 text-xs text-soft"
+            >
               {tech}
             </li>
           ))}
@@ -45,14 +58,28 @@ function ProjectCard({ project, featured }) {
               />
             </a>
           )}
-          {project.github && (
+
+          {project.frontendURL && (
             <a
-              href={project.github}
+              href={project.frontendURL}
               target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-line px-4 py-2 text-sm font-semibold transition-colors hover:border-ink"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-line px-4 py-2 text-sm font-semibold transition-colors hover:border-ink hover:bg-card"
             >
-              <GithubIcon className="h-4 w-4" /> Source code
+              <GithubIcon className="h-4 w-4" />
+              Frontend
+            </a>
+          )}
+
+          {project.backendURL && (
+            <a
+              href={project.backendURL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-line px-4 py-2 text-sm font-semibold transition-colors hover:border-ink hover:bg-card"
+            >
+              <GithubIcon className="h-4 w-4" />
+              Backend
             </a>
           )}
         </div>
@@ -70,7 +97,11 @@ export default function Projects() {
     >
       <div className="grid gap-6 md:grid-cols-2">
         {projects.map((project, i) => (
-          <Reveal key={project.title} index={i} className={i === 0 ? "md:col-span-2" : ""}>
+          <Reveal
+            key={project.title}
+            index={i}
+            className={i === 0 ? "md:col-span-2" : ""}
+          >
             <ProjectCard project={project} featured={i === 0} />
           </Reveal>
         ))}
