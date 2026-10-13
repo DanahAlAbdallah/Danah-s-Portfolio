@@ -1,0 +1,76 @@
+/* ==========================================================================
+   THEME FILE: the only place you need to edit to restyle the whole site.
+
+   - Change any colour below, or
+   - Add a new theme: copy a block, rename it, then add it to `themes`
+     in src/data.js so it shows up in the switcher.
+
+   Colour roles
+     --c-bg          page background
+     --c-card        cards and panels
+     --c-ink         main text
+     --c-soft        secondary text
+     --c-line        borders and dividers
+     --c-accent      fills (buttons, dots, highlights)
+     --c-accent-ink  text that sits ON the accent colour
+     --c-link        accent used as TEXT (must be readable on --c-bg)
+   ========================================================================== */
+
+:root {
+  /* Fonts (loaded in index.html) */
+  --f-heading: "Fraunces", Georgia, "Times New Roman", serif;
+  --f-body: "Schibsted Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* Lichen: pale sage with ochre (default) */
+/* :root,
+[data-theme="lichen"] {
+  color-scheme: light;
+  --c-bg: #e3e7da;
+  --c-card: #eef1e6;
+  --c-ink: #17231c;
+  --c-soft: #4f5d52;
+  --c-line: #bcc5b0;
+  --c-accent: #e0a82e;
+  --c-accent-ink: #17231c;
+  --c-link: #7a4f00;
+} */
+
+/* Sodium: warm dark with streetlight amber */
+/* [data-theme="sodium"] {
+  color-scheme: dark;
+  --c-bg: #17130f;
+  --c-card: #221c16;
+  --c-ink: #f1e9da;
+  --c-soft: #b3a894;
+  --c-line: #3a3128;
+  --c-accent: #f0a43a;
+  --c-accent-ink: #17130f;
+  --c-link: #f0a43a;
+} */
+
+/* Rosewater: blush paper with raspberry */
+[data-theme="rosewater"] {
+  color-scheme: light;
+  --c-bg: #f2dfd9;
+  --c-card: #f8ebe6;
+  --c-ink: #36202a;
+  --c-soft: #6e4f59;
+  --c-line: #dcbdb5;
+  --c-accent: #c23b5a;
+  --c-accent-ink: #fff4f1;
+  --c-link: #a62d4b;
+}
+
+/* Moss: deep forest with lime */
+/* [data-theme="moss"] {
+  color-scheme: dark;
+  --c-bg: #12211a;
+  --c-card: #1a2d23;
+  --c-ink: #e7e6d3;
+  --c-soft: #a9b8a5;
+  --c-line: #2c4437;
+  --c-accent: #cfe15a;
+  --c-accent-ink: #12211a;
+  --c-link: #cfe15a;
+} */
