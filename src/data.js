@@ -4,7 +4,7 @@
    Leave `src: null` to show a placeholder.
    ========================================================================== */
 import prof from "./assets/GifHero.gif";
-import project1 from "./assets/project1.png";
+import project1 from "./assets/EUPHORIA.png";
 import ALEY from "./assets/ALEY.jpeg";
 import ParisCanal from "./assets/ParisCanal.jpeg";
 import Sayda from "./assets/Sayda.jpeg";
@@ -16,11 +16,11 @@ import CV from "./assets/Danah_Al_Abdallah_CV.pdf";
 export const profile = {
   name: "Danah Al-Abdallah",
   role: "Full stack developer",
-  availability: "Open to new roles", // set to "" to hide the badge
+  availability: "Open to new roles",
   tagline:
     "I'm a software developer who enjoys using technology to build meaningful, accessible solutions that make everyday life easier for people of all ages and backgrounds. I build modern, intuitive and accessible web apps, from the interface down to the database, for people of all ages and backgrounds.",
   email: "danaalabdallah02@gmail.com",
-  cv: CV, // your CV is at /public/cv.pdf, or set to "" to hide the button
+  cv: CV,
   github: "https://github.com/DanahAlAbdallah",
   linkedin: "https://www.linkedin.com/in/danahalabdallah/",
   photo: prof,
@@ -69,11 +69,19 @@ export const projects = [
     status: "In Progress",
     summary:
       "A mental health platform designed to make mental health support more accessible. It connects users with therapists, offers informative articles shared by professionals, and allows users to book therapy sessions through a simple and user-friendly interface. The platform aims to raise awareness, encourage personal growth, and create a supportive community where everyone’s mental well-being matters.",
-    stack: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Express.js", "PostgreSQL", "Prisma ORM"],
+    stack: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Prisma ORM",
+    ],
     backendURL: "https://github.com/DanahAlAbdallah/Mental-Health-backend",
-    frontendURL:"https://github.com/DanahAlAbdallah/Mental-Health-Frontend",
+    frontendURL: "https://github.com/DanahAlAbdallah/Mental-Health-Frontend",
     live: "",
-    image: project1, 
+    image: project1,
   },
   // {
   //   title: "Online Goods Shop",
@@ -96,11 +104,29 @@ export const projects = [
 ];
 
 export const skills = [
-  { group: "Languages", items: ["JavaScript", "TypeScript", "PHP", "Java", "HTML", "CSS", "AJAX", "jQuery"] },
-  { group: "Frameworks and libraries", items: ["React.js", "Angular", "Express.js", "Bootstrap", "Tailwind CSS"] },
+  {
+    group: "Languages",
+    items: [
+      "JavaScript",
+      "TypeScript",
+      "PHP",
+      "Java",
+      "HTML",
+      "CSS",
+      "AJAX",
+      "jQuery",
+    ],
+  },
+  {
+    group: "Frameworks and libraries",
+    items: ["React.js", "Angular", "Express.js", "Bootstrap", "Tailwind CSS"],
+  },
   { group: "Databases", items: ["MongoDB", "MySQL"] },
   { group: "Tools and cloud", items: ["Git & GitHub"] },
-  { group: "How I work", items: ["Building", "Testing", "Problem solving", "Team adapting"] },
+  {
+    group: "How I work",
+    items: ["Building", "Testing", "Problem solving", "Team adapting"],
+  },
   { group: "Spoken languages", items: ["Arabic (native)", "English (fluent)"] },
 ];
 
@@ -114,26 +140,77 @@ export const education = [
 ];
 
 export const certificates = [
-  { title: "Full Stack Web Development Bootcamp", issuer: "ESA Coding Lab", year: "2023", link: "" },
-  { title: "Full Stack Web Development Bootcamp", issuer: "ESIEE-IT", year: "2023", link: "" },
-  { title: "50 Hours MERN Stack", issuer: "Tatweer Baladna", year: "2023", link: "" },
+  {
+    title: "Full Stack Web Development Bootcamp",
+    issuer: "ESA Coding Lab",
+    year: "2023",
+    link: "",
+  },
+  {
+    title: "Full Stack Web Development Bootcamp",
+    issuer: "ESIEE-IT",
+    year: "2023",
+    link: "",
+  },
+  {
+    title: "50 Hours MERN Stack",
+    issuer: "Tatweer Baladna",
+    year: "2023",
+    link: "",
+  },
 ];
 
 export const beyond = {
   intro:
     "When I am not coding I am usually looking for good light or turning an idea into a few honest paragraphs.",
   photos: [
-    { src: ALEY, alt: "Describe photo 1", caption: "Aley, 2026", shape: "portrait" },
-    { src: JabalSafi, alt: "Describe photo 2", caption: "Jabal Safi, 2022", shape: "landscape" },
-    { src: Sayda, alt: "Describe photo 3", caption: "Sayda, 2026", shape: "square" },
-    { src: Beach, alt: "Describe photo 4", caption: "Sayda, 2026", shape: "landscape" },
-    { src: ParisCanal, alt: "Describe photo 5", caption: "Sarafand, 2026", shape: "portrait" },
-    { src: Rahbe, alt: "Describe photo 6", caption: "Akkar, 2026", shape: "square" },
+    {
+      src: ALEY,
+      alt: "Describe photo 1",
+      caption: "Aley, 2026",
+      shape: "portrait",
+    },
+    {
+      src: JabalSafi,
+      alt: "Describe photo 2",
+      caption: "Jabal Safi, 2022",
+      shape: "landscape",
+    },
+    {
+      src: Sayda,
+      alt: "Describe photo 3",
+      caption: "Sayda, 2026",
+      shape: "square",
+    },
+    {
+      src: Beach,
+      alt: "Describe photo 4",
+      caption: "Sayda, 2026",
+      shape: "landscape",
+    },
+    {
+      src: ParisCanal,
+      alt: "Describe photo 5",
+      caption: "Sarafand, 2026",
+      shape: "portrait",
+    },
+    {
+      src: Rahbe,
+      alt: "Describe photo 6",
+      caption: "Akkar, 2026",
+      shape: "square",
+    },
   ],
-  photoLink: { label: "More photographs", href: "https://instagram.com/your-username" },
+  photoLink: {
+    label: "More photographs",
+    href: "https://instagram.com/your-username",
+  },
   writing: {
     text: "I write in Arabic, weaving thoughts, feelings, and observations into prose. Through words, I capture the little things that often go unnoticed and give them a place to live.",
-    link: { label: "Read my writing", href: "https://medium.com/@your-username" },
+    link: {
+      label: "Read my writing",
+      href: "https://medium.com/@your-username",
+    },
   },
 };
 
